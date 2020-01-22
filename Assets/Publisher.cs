@@ -17,6 +17,7 @@ public class Publisher : MonoBehaviour
 
         OnTest("Created");
         Debug.Log($"subscriber = {subscriber}, method = {method}");
+        method();
 
         Destroy(subscriber.gameObject);
 
@@ -24,5 +25,6 @@ public class Publisher : MonoBehaviour
 
         OnTest("Destroyed");
         Debug.Log($"subscriber = {subscriber}, method = {method}");
+        method();
     }
 }
